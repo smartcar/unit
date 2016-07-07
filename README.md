@@ -1,8 +1,13 @@
 # Unit Conversion Library
->convert between distance, pressure, and temperatures units easily!
+
+convert between distance, pressure, and temperature units easily!
+
 # Installation
->`$ npm install units`
+
+`$ npm install units`
+
 # Supported Units
+
 | Distance | aliases |
 |------|---------|
 | inch | `in` `inch` `inches`|
