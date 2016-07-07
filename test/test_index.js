@@ -56,15 +56,15 @@ suite('index', function(){
     expect(kpa).to.equal(1);
   });
   test('kelvins', function(){
-    var celcius = unit(300, 'kelvins').as('c');
-    expect(celcius).to.be.closeTo(26.85, 0.01);
+    var fahrenheit = unit(300, 'kelvins').as('f');
+    expect(fahrenheit).to.be.closeTo(80.33, 0.01);
   });
   test('fahrenheit', function(){
     var celcius = unit(100, 'fahrenheit').as('celcius');
     expect(celcius).to.be.closeTo(37.7778, 0.0001);
   });
   test('celcius', function(){
-    var celcius = unit(100, 'c').as('celcius');
-    expect(celcius).to.equal(100);
+    var kelvin = unit(100, 'c').as('kelvin');
+    expect(kelvin).to.equal(373.15);
   });
 });
