@@ -1,0 +1,36 @@
+{
+  "name": "unit",
+  "version": "1.0.0",
+  "description": ": unit conversion library",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=developement mocha --ui=tdd --recursive --timeout=10000",
+    "cover": "npm run cover-unit",
+    "coveralls": "npm run-script cover && coveralls < coverage/lcov.info",
+    "cover-unit": "cross-env NODE_ENV=development istanbul cover node_modules/mocha/bin/_mocha -- --ui=tdd --recursive --timeout=10000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smartcar/unit.git"
+  },
+  "keywords": [
+    "unit",
+    "conversion",
+    "metric",
+    "imperial"
+  ],
+  "author": "Zane Bradley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smartcar/unit/issues"
+  },
+  "homepage": "https://github.com/smartcar/unit#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.9",
+    "cross-env": "^1.0.8",
+    "dirty-chai": "^1.2.2",
+    "istanbul": "^0.4.4",
+    "mocha": "^2.5.3"
+  }
+}
