@@ -3,6 +3,14 @@ var expect = require('chai').use(require('dirty-chai')).expect;
 var unit = require('../index');
 
 suite('index', function(){
+  test('in, as, and to syntaxes are equivalent', function(){
+    var inches = unit(12, 'inches');
+    var to_syntax = inches.to('feet');
+    var as_syntax = inches.as('feet');
+    var in_syntax = inches.in('feet');
+    expect(to_syntax).to.equal(in_syntax);
+    expect(to_syntax).to.equal(as_syntax);
+  })
   test('inches', function(){
     var km = unit(100000, 'inches').as('km');
     expect(km).to.be.closeTo(2.54, 0.0001);

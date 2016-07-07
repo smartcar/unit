@@ -4,10 +4,10 @@
   "description": ": unit conversion library",
   "main": "index.js",
   "scripts": {
-    "test": "cross-env NODE_ENV=developement mocha --ui=tdd --recursive --timeout=10000",
+    "test": "mocha --ui=tdd --recursive",
     "cover": "npm run cover-unit",
     "coveralls": "npm run-script cover && coveralls < coverage/lcov.info",
-    "cover-unit": "cross-env NODE_ENV=development istanbul cover node_modules/mocha/bin/_mocha -- --ui=tdd --recursive --timeout=10000"
+    "cover-unit": "istanbul cover node_modules/mocha/bin/_mocha -- --ui=tdd --recursive"
   },
   "repository": {
     "type": "git",
