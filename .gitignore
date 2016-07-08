@@ -1,4 +1,4 @@
 node_modules
 coverage
 doc
-npm-debug.log
+*.log

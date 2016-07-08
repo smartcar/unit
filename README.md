@@ -4,7 +4,7 @@ convert between distance, pressure, and temperature units easily!
 
 # Installation
 
-`$ npm install units`
+`$ npm install smartcar-unit`
 
 # Supported Units
 
@@ -34,7 +34,7 @@ convert between distance, pressure, and temperature units easily!
 
 # Example Usage
 ```javascript
-var unit = require('unit');
+var unit = require('smartcar-unit');
 var distance = unit(184000, 'km');
 distance.as('miles');
 ```
