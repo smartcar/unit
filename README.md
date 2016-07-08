@@ -30,7 +30,7 @@ convert between distance, pressure, and temperature units easily!
 | ----------------- | ------- |
 | kelvin | `k` `kelvin` `kelvins` |
 | fahrenheit | `f` `fahrenheit` |
-| celcius | `c` `celcius` |
+| celcius | `c` `celcius` `centigrade` |
 
 # Example Usage
 ```javascript

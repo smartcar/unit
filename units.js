@@ -45,7 +45,7 @@ module.exports = {
   },
   kpa: {
     base: 1,
-    aliases: ['kilopascal', 'kilopascals']
+    aliases: ['kpas', 'kilopascal', 'kilopascals']
   },
   k: {
     from: function(c){ return c + 273.15; },
