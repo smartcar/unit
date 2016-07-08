@@ -14,11 +14,16 @@ for (var key in units){
   });
 }
 
-module.exports = function(value, from_unit){
+var round = function(n, places){
+  return +(Math.round(n + "e+" + places) + "e-" + places);
+}
+
+module.exports = function(value, fromUnit){
   var methods = {};
-  methods.to = function(to_unit){
-      var internal = table[from_unit].to(value);
-      return table[to_unit].from(internal)
+  methods.to = function(toUnit, decimalPlaces){
+    var internal = table[fromUnit].to(value);
+    var output = table[toUnit].from(internal);
+    return decimalPlaces ? round(output, decimalPlaces) : output;
   }
   methods.as = methods.to;
   methods.in = methods.to;

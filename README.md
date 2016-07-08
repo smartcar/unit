@@ -1,10 +1,19 @@
-# Unit Conversion Library [![Build Status](https://travis-ci.org/smartcar/unit.svg?branch=master)](https://travis-ci.org/smartcar/unit) [![Coverage Status](https://coveralls.io/repos/github/smartcar/unit/badge.svg?branch=master)](https://coveralls.io/github/smartcar/unit?branch=master)
+# Unit Conversion Library [![Build Status](https://travis-ci.org/smartcar/unit.svg?branch=master)](https://travis-ci.org/smartcar/unit) [![Coverage Status](https://coveralls.io/repos/github/smartcar/unit/badge.svg?branch=master)](https://coveralls.io/github/smartcar/unit?branch=master) [![NPM version](https://img.shields.io/npm/v/smartcar-unit.svg)](https://www.npmjs.com/package/smartcar-unit)
 
 convert between distance, pressure, and temperature units easily!
 
 # Installation
 
-`$ npm install units`
+`$ npm install smartcar-unit`
+
+# Example Usage
+
+```javascript
+var unit = require('smartcar-unit');
+var miles = unit(184000, 'miles');
+var kilometers = distance.as('kilometers'); // 296119.296
+var kilometersRounded = distance.as('kilometers', 2); // 296119.3
+```
 
 # Supported Units
 
@@ -31,10 +40,3 @@ convert between distance, pressure, and temperature units easily!
 | kelvin | `k` `kelvin` `kelvins` |
 | fahrenheit | `f` `fahrenheit` |
 | celcius | `c` `celcius` `centigrade` |
-
-# Example Usage
-```javascript
-var unit = require('unit');
-var distance = unit(184000, 'km');
-distance.as('miles');
-```
