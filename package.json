@@ -1,13 +1,12 @@
 {
-  "name": "unit",
+  "name": "smartcar-unit",
   "version": "1.0.0",
-  "description": ": unit conversion library",
+  "description": "unit conversion library",
   "main": "index.js",
   "scripts": {
     "test": "mocha --ui=tdd --recursive",
-    "cover": "npm run cover-unit",
-    "coveralls": "npm run-script cover && coveralls < coverage/lcov.info",
-    "cover-unit": "istanbul cover node_modules/mocha/bin/_mocha -- --ui=tdd --recursive"
+    "cover": "istanbul cover node_modules/mocha/bin/_mocha -- --ui=tdd --recursive",
+    "coveralls": "npm run-script cover && coveralls < coverage/lcov.info"
   },
   "repository": {
     "type": "git",
@@ -19,7 +18,7 @@
     "metric",
     "imperial"
   ],
-  "author": "Zane Bradley",
+  "author": "Zane Bradley <zane.bradley@smartcar.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/smartcar/unit/issues"
