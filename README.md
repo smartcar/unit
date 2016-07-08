@@ -1,4 +1,4 @@
-# Unit Conversion Library
+# Unit Conversion Library [![Build Status](https://travis-ci.org/smartcar/unit.svg?branch=master)](https://travis-ci.org/smartcar/unit) [![Coverage Status](https://coveralls.io/repos/github/smartcar/unit/badge.svg?branch=master)](https://coveralls.io/github/smartcar/unit?branch=master)
 
 convert between distance, pressure, and temperature units easily!
 
