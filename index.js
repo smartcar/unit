@@ -14,11 +14,11 @@ for (var key in units){
   });
 }
 
-module.exports = function(value, from_unit){
+module.exports = function(value, fromUnit){
   var methods = {};
-  methods.to = function(to_unit){
-      var internal = table[from_unit].to(value);
-      return table[to_unit].from(internal)
+  methods.to = function(toUnit){
+      var internal = table[fromUnit].to(value);
+      return table[toUnit].from(internal)
   }
   methods.as = methods.to;
   methods.in = methods.to;
