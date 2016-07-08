@@ -6,6 +6,15 @@ convert between distance, pressure, and temperature units easily!
 
 `$ npm install smartcar-unit`
 
+# Example Usage
+
+```javascript
+var unit = require('smartcar-unit');
+var miles = unit(184000, 'miles');
+var kilometers = distance.as('kilometers'); // 296119.296
+var kilometersRounded = distance.as('kilometers', 2); // 296119.3
+```
+
 # Supported Units
 
 | Distance | aliases |
@@ -31,10 +40,3 @@ convert between distance, pressure, and temperature units easily!
 | kelvin | `k` `kelvin` `kelvins` |
 | fahrenheit | `f` `fahrenheit` |
 | celcius | `c` `celcius` `centigrade` |
-
-# Example Usage
-```javascript
-var unit = require('smartcar-unit');
-var distance = unit(184000, 'km');
-distance.as('miles');
-```

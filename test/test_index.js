@@ -10,7 +10,11 @@ suite('index', function(){
     var in_syntax = inches.in('feet');
     expect(to_syntax).to.equal(in_syntax);
     expect(to_syntax).to.equal(as_syntax);
-  })
+  });
+  test('rounding', function(){
+    var rounded = unit(13, 'inches').to('feet', 2);
+    expect(rounded).to.equal(1.08);
+  });
   test('inches', function(){
     var km = unit(100000, 'inches').as('km');
     expect(km).to.be.closeTo(2.54, 0.0001);
@@ -20,8 +24,8 @@ suite('index', function(){
     expect(km).to.be.closeTo(3.048, 0.0001);
   });
   test('miles', function(){
-    var km = unit(100, 'miles').as('kilometers');
-    expect(km).to.be.closeTo(160.934, 0.1);
+    var km = unit(184000, 'miles').as('kilometers');
+    expect(km).to.be.closeTo(296119.296, 0.001);
   });
   test('meters', function(){
     var km = unit(1000, 'meters').as('km');
