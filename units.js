@@ -1,15 +1,15 @@
 module.exports = {
   in: {
-    'base': 1000 / 0.3048 * 12,
-    'aliases': ['inch', 'inches']
+    base: 1000 / 0.3048 * 12,
+    aliases: ['inch', 'inches']
   },
   ft: {
-    'base': 1000 / 0.3048,
-    'aliases': ['foot', 'feet']
+    base: 1000 / 0.3048,
+    aliases: ['foot', 'feet']
   },
   mi: {
-    'base': 1/1.609344,
-    'aliases': ['mile', 'miles']
+    base: 1/1.609344,
+    aliases: ['mile', 'miles']
   },
   m: {
     base: 1000,

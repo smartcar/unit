@@ -11,8 +11,8 @@ convert between distance, pressure, and temperature units easily!
 ```javascript
 var unit = require('smartcar-unit');
 var miles = unit(184000, 'miles');
-var kilometers = distance.as('kilometers'); // 296119.296
-var kilometersRounded = distance.as('kilometers', 2); // 296119.3
+var kilometers = miles.as('kilometers'); // 296119.296
+var kilometersRounded = miles.as('kilometers', 2); // 296119.3
 ```
 
 # Supported Units
