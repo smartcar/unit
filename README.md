@@ -1,6 +1,6 @@
 # Unit Conversion Library [![Build Status](https://travis-ci.org/smartcar/unit.svg?branch=master)](https://travis-ci.org/smartcar/unit) [![Coverage Status](https://coveralls.io/repos/github/smartcar/unit/badge.svg?branch=master)](https://coveralls.io/github/smartcar/unit?branch=master) [![NPM version](https://img.shields.io/npm/v/smartcar-unit.svg)](https://www.npmjs.com/package/smartcar-unit)
 
-convert between distance, pressure, and temperature units easily!
+convert between distance, pressure, temperature and mass units easily!
 
 # Installation
 
@@ -18,7 +18,7 @@ var kilometersRounded = miles.as('kilometers', 2); // 296119.3
 # Supported Units
 
 | Distance | aliases |
-|------|---------|
+|----------|---------|
 | inch | `in` `inch` `inches`|
 | foot | `ft` `foot` `feet` |
 | mile | `mi` `mile` `miles` |
@@ -26,7 +26,7 @@ var kilometersRounded = miles.as('kilometers', 2); // 296119.3
 | kilometer | `km` `kilometer` `kilometers` |
 
 | Pressure | aliases |
-|----------------|---------|
+|----------|---------|
 | pounds per square inch| `psi` `psis` |
 | pascal | `pa` `pascal` `pascals` |
 | bar | `bar` `bars` |
@@ -36,7 +36,14 @@ var kilometersRounded = miles.as('kilometers', 2); // 296119.3
 | kilopascal | `kpa` `kpas` `kilopascal` `kilopascals` |
 
 | Temperature | aliases |
-| ----------------- | ------- |
+| ----------- | ------- |
 | kelvin | `k` `kelvin` `kelvins` |
 | fahrenheit | `f` `fahrenheit` |
 | celcius | `c` `celcius` `centigrade` |
+
+| Mass | aliases |
+| ---- | ------- |
+| ounce | `oz` `ounce` `ounces` |
+| pound | `lb` `lbs` `pound` `pounds` |
+| gram | `g` `gm` `gram` `grams` |
+| kilogram | `kg` `kilogram` `kilograms` |

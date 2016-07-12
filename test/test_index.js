@@ -71,4 +71,20 @@ suite('index', function(){
     var kelvin = unit(100, 'c').as('kelvin');
     expect(kelvin).to.equal(373.15);
   });
+  test('ounces', function(){
+    var kg = unit(100, 'ounces').as('kg');
+    expect(kg).to.be.closeTo(2.83495, 0.00001);
+  });
+  test('pounds', function(){
+    var kg = unit(100, 'lbs').as('kg');
+    expect(kg).to.be.closeTo(45.3592, 0.0001);
+  });
+  test('grams', function(){
+    var kg = unit(1000, 'grams').as('kg');
+    expect(kg).to.equal(1);
+  });
+  test('kilograms', function(){
+    var kg = unit(1, 'kg').as('kg');
+    expect(kg).to.equal(1);
+  });
 });
