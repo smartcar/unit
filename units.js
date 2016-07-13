@@ -61,5 +61,21 @@ module.exports = {
     from: function(c){ return c; },
     to: function(c){ return c; },
     aliases: ['celcius', 'centigrade']
+  },
+  oz: {
+    base: 35.274,
+    aliases: ['ounce', 'ounces']
+  },
+  lb: {
+    base: 2.20462,
+    aliases: ['pound', 'lbs', 'pounds']
+  },
+  g: {
+    base: 1000,
+    aliases: ['gm', 'gram', 'grams']
+  },
+  kg: {
+    base: 1,
+    aliases: ['kilogram', 'kilograms']
   }
 };
