@@ -1,6 +1,6 @@
 {
   "name": "smartcar-unit",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "unit conversion library",
   "main": "index.js",
   "scripts": {

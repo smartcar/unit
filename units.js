@@ -11,6 +11,10 @@ module.exports = {
     base: 1/1.609344,
     aliases: ['mile', 'miles']
   },
+  cm: {
+    base: 100000,
+    aliases: ['centimeter', 'centimeters']
+  },
   m: {
     base: 1000,
     aliases: ['meter', 'meters', 'metre', 'metres' ]
