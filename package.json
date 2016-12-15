@@ -4,7 +4,7 @@
   "description": "unit conversion library",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --ui=tdd --recursive",
+    "test": "ava",
     "posttest": "npm run lint -s",
     "lint": "eslint . --cache",
     "cover": "nyc npm test -s"
@@ -26,12 +26,9 @@
   },
   "homepage": "https://github.com/smartcar/unit#readme",
   "devDependencies": {
-    "chai": "^3.5.0",
-    "cross-env": "^1.0.8",
-    "dirty-chai": "^1.2.2",
+    "ava": "^0.17.0",
     "eslint": "^3.12.2",
     "eslint-config-smartcar": "^2.0.0",
-    "mocha": "^2.5.3",
     "nyc": "^10.0.0"
   }
 }
