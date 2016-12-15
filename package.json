@@ -3,28 +3,28 @@
   "version": "1.0.3",
   "description": "unit conversion library",
   "main": "index.js",
-  "scripts": {
-    "test": "ava",
-    "posttest": "npm run lint -s",
-    "lint": "eslint . --cache",
-    "cover": "nyc npm test -s"
-  },
+  "license": "MIT",
+  "author": "Smartcar <hello@smartcar.com> (https://smartcar.com)",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/smartcar/unit.git"
   },
+  "bugs": {
+    "url": "https://github.com/smartcar/unit/issues"
+  },
+  "homepage": "https://github.com/smartcar/unit#readme",
   "keywords": [
     "unit",
     "conversion",
     "metric",
     "imperial"
   ],
-  "author": "Zane Bradley <zane.bradley@smartcar.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/smartcar/unit/issues"
+  "scripts": {
+    "test": "ava",
+    "posttest": "npm run lint -s",
+    "lint": "eslint . --cache",
+    "cover": "nyc npm test -s"
   },
-  "homepage": "https://github.com/smartcar/unit#readme",
   "devDependencies": {
     "ava": "^0.17.0",
     "eslint": "^3.12.2",
