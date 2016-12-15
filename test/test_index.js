@@ -82,11 +82,11 @@ test('kelvins', function(t) {
 });
 
 test('fahrenheit', function(t) {
-  var celcius = unit(100, 'fahrenheit').as('celcius');
-  t.true(approximately(celcius, 37.7778));
+  var celsius = unit(100, 'fahrenheit').as('celsius');
+  t.true(approximately(celsius, 37.7778));
 });
 
-test('celcius', function(t) {
+test('celsius', function(t) {
   var kelvin = unit(100, 'c').as('kelvin');
   t.is(kelvin, 373.15);
 });

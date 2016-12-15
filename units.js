@@ -66,7 +66,7 @@ module.exports = {
   c: {
     from: function(c) { return c; },
     to: function(c) { return c; },
-    aliases: ['celcius', 'centigrade'],
+    aliases: ['celsius', 'centigrade'],
   },
   oz: {
     base: 35.274,
