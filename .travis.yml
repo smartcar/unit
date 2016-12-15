@@ -9,8 +9,9 @@ node_js:
   - '0.12'
   - '0.11'
 
-after_script:
+after_success:
   - npm run cover
+  - test $TRAVIS_NODE_VERSION = 'stable' && bash <(curl -s https://codecov.io/bash)
 
 deploy:
   on:
