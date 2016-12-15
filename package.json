@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --ui=tdd --recursive",
-    "cover": "nyc npm test -s",
-    "coveralls": "npm run-script cover && coveralls < coverage/lcov.info"
+    "cover": "nyc npm test -s"
   },
   "repository": {
     "type": "git",
@@ -26,7 +25,6 @@
   "homepage": "https://github.com/smartcar/unit#readme",
   "devDependencies": {
     "chai": "^3.5.0",
-    "coveralls": "^2.11.9",
     "cross-env": "^1.0.8",
     "dirty-chai": "^1.2.2",
     "mocha": "^2.5.3",

@@ -10,7 +10,7 @@ node_js:
   - '0.11'
 
 after_script:
-  - npm run coveralls
+  - npm run cover
 
 deploy:
   on:
