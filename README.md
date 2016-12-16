@@ -1,6 +1,6 @@
 # Unit Conversion Library [![NPM package][npm-image]][npm-url] [![Build Status][ci-image]][ci-url] [![Coverage][coverage-image]][coverage-url]
 
-convert between distance, pressure, temperature and mass units easily!
+Convert between distance, pressure, temperature and mass units easily!
 
 # Installation
 
@@ -39,7 +39,7 @@ var kilometersRounded = miles.as('kilometers', 2); // 296119.3
 | ----------- | ------- |
 | kelvin | `k` `kelvin` `kelvins` |
 | fahrenheit | `f` `fahrenheit` |
-| celcius | `c` `celcius` `centigrade` |
+| celsius | `c` `celsius` `centigrade` |
 
 | Mass | aliases |
 | ---- | ------- |
