@@ -1,6 +1,6 @@
-# Unit Conversion Library [![Build Status](https://travis-ci.org/smartcar/unit.svg?branch=master)](https://travis-ci.org/smartcar/unit) [![Coverage Status](https://coveralls.io/repos/github/smartcar/unit/badge.svg?branch=master)](https://coveralls.io/github/smartcar/unit?branch=master) [![NPM version](https://img.shields.io/npm/v/smartcar-unit.svg)](https://www.npmjs.com/package/smartcar-unit)
+# Unit Conversion Library [![NPM package][npm-image]][npm-url] [![Build Status][ci-image]][ci-url] [![Coverage][coverage-image]][coverage-url]
 
-convert between distance, pressure, temperature and mass units easily!
+Convert between distance, pressure, temperature and mass units easily!
 
 # Installation
 
@@ -39,7 +39,7 @@ var kilometersRounded = miles.as('kilometers', 2); // 296119.3
 | ----------- | ------- |
 | kelvin | `k` `kelvin` `kelvins` |
 | fahrenheit | `f` `fahrenheit` |
-| celcius | `c` `celcius` `centigrade` |
+| celsius | `c` `celsius` `centigrade` |
 
 | Mass | aliases |
 | ---- | ------- |
@@ -47,3 +47,12 @@ var kilometersRounded = miles.as('kilometers', 2); // 296119.3
 | pound | `lb` `lbs` `pound` `pounds` |
 | gram | `g` `gm` `gram` `grams` |
 | kilogram | `kg` `kilogram` `kilograms` |
+
+[npm-url]: https://www.npmjs.com/package/smartcar-unit
+[npm-image]: https://img.shields.io/npm/v/smartcar-unit.svg?style=flat-square
+
+[ci-url]: https://travis-ci.org/smartcar/unit
+[ci-image]: https://img.shields.io/travis/smartcar/unit/master.svg?style=flat-square
+
+[coverage-url]: https://codecov.io/gh/smartcar/unit
+[coverage-image]: https://img.shields.io/codecov/c/github/smartcar/unit/master.svg?style=flat-square

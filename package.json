@@ -1,35 +1,41 @@
 {
   "name": "smartcar-unit",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "unit conversion library",
   "main": "index.js",
-  "scripts": {
-    "test": "mocha --ui=tdd --recursive",
-    "cover": "istanbul cover node_modules/mocha/bin/_mocha -- --ui=tdd --recursive",
-    "coveralls": "npm run-script cover && coveralls < coverage/lcov.info"
-  },
+  "license": "MIT",
+  "author": "Smartcar <hello@smartcar.com> (https://smartcar.com)",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/smartcar/unit.git"
   },
+  "bugs": {
+    "url": "https://github.com/smartcar/unit/issues"
+  },
+  "homepage": "https://github.com/smartcar/unit#readme",
   "keywords": [
     "unit",
     "conversion",
     "metric",
     "imperial"
   ],
-  "author": "Zane Bradley <zane.bradley@smartcar.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/smartcar/unit/issues"
+  "files": [
+    "index.js",
+    "units.js"
+  ],
+  "engnes": {
+    "node": ">=4.0.0"
   },
-  "homepage": "https://github.com/smartcar/unit#readme",
+  "scripts": {
+    "test": "ava",
+    "posttest": "npm run lint -s",
+    "lint": "eslint . --cache",
+    "cover": "nyc npm test -s"
+  },
   "devDependencies": {
-    "chai": "^3.5.0",
-    "coveralls": "^2.11.9",
-    "cross-env": "^1.0.8",
-    "dirty-chai": "^1.2.2",
-    "istanbul": "^0.4.4",
-    "mocha": "^2.5.3"
+    "ava": "^0.17.0",
+    "eslint": "^3.12.2",
+    "eslint-config-smartcar": "^2.0.0",
+    "nyc": "^10.0.0"
   }
 }
