@@ -84,4 +84,20 @@ module.exports = {
     base: 1,
     aliases: ['kilogram', 'kilograms'],
   },
+  ml: {
+    base: 1000,
+    aliases: ['milliliter', 'milliliters', 'millilitre', 'millilitres'],
+  },
+  l: {
+    base: 1,
+    aliases: ['liter', 'liters', 'litre', 'litres'],
+  },
+  usgal: {
+    base: 0.264172,
+    aliases: ['usgallon', 'usgallons'],
+  },
+  gal: {
+    base: 0.219969,
+    aliases: ['gallon', 'gallons'],
+  },
 };
