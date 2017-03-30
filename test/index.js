@@ -110,3 +110,23 @@ test('kilograms', function(t) {
   var kg = unit(1, 'kg').as('kg');
   t.is(kg, 1);
 });
+
+test('milliliters', function(t) {
+  var l = unit(1000, 'milliliters').as('l');
+  t.is(l, 1);
+});
+
+test('liters', function(t) {
+  var l = unit(1, 'l').as('l');
+  t.is(l, 1);
+});
+
+test('usgallons', function(t) {
+  var l = unit(0.264172, 'usgallons').as('l');
+  t.is(l, 1);
+});
+
+test('gallons', function(t) {
+  var l = unit(0.219969, 'gallons').as('l');
+  t.is(l, 1);
+});

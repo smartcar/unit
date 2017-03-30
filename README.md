@@ -1,6 +1,6 @@
 # Unit Conversion Library [![NPM package][npm-image]][npm-url] [![Build Status][ci-image]][ci-url] [![Coverage][coverage-image]][coverage-url]
 
-Convert between distance, pressure, temperature and mass units easily!
+Convert between distance, pressure, temperature, volume and mass units easily!
 
 # Installation
 
@@ -47,6 +47,13 @@ var kilometersRounded = miles.as('kilometers', 2); // 296119.3
 | pound | `lb` `lbs` `pound` `pounds` |
 | gram | `g` `gm` `gram` `grams` |
 | kilogram | `kg` `kilogram` `kilograms` |
+
+| Volume | aliases |
+| ------ | ------- |
+| milliliter  | `ml` `milliliter` `milliliters` `millilitre` `millilitres`|
+| liter  | `l` `liter` `liters` `litre` `litres`|
+| us gallon | `usgal` `usgallon` `usgallons` |
+| imperial gallon | `gal` `gallon` `gallons` |
 
 [npm-url]: https://www.npmjs.com/package/smartcar-unit
 [npm-image]: https://img.shields.io/npm/v/smartcar-unit.svg?style=flat-square
