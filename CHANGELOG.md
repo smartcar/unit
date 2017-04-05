@@ -1,3 +1,11 @@
+# 1.1.1 (2017-03-30)
+
+## Features
+* Add volume conversions
+
+## Meta
+* [Comparison since last release](https://github.com/smartcar/unit/compare/v1.1.0...v1.1.1)
+
 # 1.1.0 (2016-12-15)
 
 Mostly an internal code reorganization, only external changes are a typo fix
@@ -13,7 +21,7 @@ From this point forward node version older than 4.0.0  will no longer be officia
 * Fixed typo `celcius -> celsius`
 
 ## Meta
-* [Comparison since last release](https://github.com/smartcar/unit/compare/v1.0.2...v1.0.3)
+* [Comparison since last release](https://github.com/smartcar/unit/compare/v1.0.2...v1.1.0)
 
 # 1.0.2 (2016-07-13)
 
