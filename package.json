@@ -1,6 +1,6 @@
 {
   "name": "smartcar-unit",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "unit conversion library",
   "main": "index.js",
   "license": "MIT",
@@ -23,7 +23,7 @@
     "index.js",
     "units.js"
   ],
-  "engnes": {
+  "engines": {
     "node": ">=4.0.0"
   },
   "scripts": {
