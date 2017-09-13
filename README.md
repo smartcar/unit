@@ -1,4 +1,4 @@
-# Unit Conversion Library [![NPM package][npm-image]][npm-url] [![Build Status][ci-image]][ci-url] [![Coverage][coverage-image]][coverage-url]
+# Unit Conversion Library [![NPM package][npm-image]][npm-url] [![Build Status][ci-image]][ci-url] [![Coverage][coverage-image]][coverage-url] [![Greenkeeper][gk-image]][gk-url]
 
 Convert between distance, pressure, temperature, volume and mass units easily!
 
@@ -63,3 +63,6 @@ var kilometersRounded = miles.as('kilometers', 2); // 296119.3
 
 [coverage-url]: https://codecov.io/gh/smartcar/unit
 [coverage-image]: https://img.shields.io/codecov/c/github/smartcar/unit/master.svg?style=flat-square
+
+[gk-url]: https://greenkeeper.io
+[gk-image]: https://badges.greenkeeper.io/smartcar/unit.svg
