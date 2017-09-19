@@ -1,6 +1,6 @@
 {
   "name": "smartcar-unit",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "unit conversion library",
   "main": "index.js",
   "license": "MIT",
@@ -37,5 +37,8 @@
     "eslint": "^3.12.2",
     "eslint-config-smartcar": "^2.0.0",
     "nyc": "^10.0.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
   }
 }
