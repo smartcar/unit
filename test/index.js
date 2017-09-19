@@ -130,3 +130,8 @@ test('gallons', function(t) {
   var l = unit(0.219969, 'gallons').as('l');
   t.is(l, 1);
 });
+
+test('uppercase - GaLLons', function(t) {
+  var l = unit(0.219969, 'GaLLons').as('l');
+  t.is(l, 1);
+});
