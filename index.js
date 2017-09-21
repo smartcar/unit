@@ -1,6 +1,5 @@
 'use strict';
 
-const _ = require('lodash');
 const units = require('./units');
 
 const table = {};
@@ -25,8 +24,8 @@ const round = function(n, places) {
 module.exports = function(value, fromUnit) {
   const methods = {};
   methods.to = function(toUnit, decimalPlaces) {
-    const internal = table[_.toLower(fromUnit)].to(value);
-    const output = table[_.toLower(toUnit)].from(internal);
+    const internal = table[fromUnit.toLowerCase()].to(value);
+    const output = table[toUnit.toLowerCase()].from(internal);
     return decimalPlaces ? round(output, decimalPlaces) : output;
   };
   methods.as = methods.to;
