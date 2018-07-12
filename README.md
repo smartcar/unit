@@ -9,10 +9,10 @@ Convert between distance, pressure, temperature, volume and mass units easily!
 # Example Usage
 
 ```javascript
-var unit = require('smartcar-unit');
-var miles = unit(184000, 'miles');
-var kilometers = miles.as('kilometers'); // 296119.296
-var kilometersRounded = miles.as('kilometers', 2); // 296119.3
+const unit = require('smartcar-unit');
+const miles = unit(184000, 'miles');
+const kilometers = miles.as('kilometers'); // 296119.296
+const kilometersRounded = miles.as('kilometers', 2); // 296119.3
 ```
 
 # Supported Units
