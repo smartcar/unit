@@ -58,11 +58,11 @@ const kilometersRounded = miles.as('kilometers', 2); // 296119.3
 [npm-url]: https://www.npmjs.com/package/smartcar-unit
 [npm-image]: https://img.shields.io/npm/v/smartcar-unit.svg?style=flat-square
 
-[ci-url]: https://travis-ci.org/smartcar/unit
-[ci-image]: https://img.shields.io/travis/smartcar/unit/master.svg?style=flat-square
+[ci-url]: https://travis-ci.com/smartcar/unit
+[ci-image]: https://img.shields.io/travis/com/smartcar/unit/master.svg?style=flat-square
 
 [coverage-url]: https://codecov.io/gh/smartcar/unit
 [coverage-image]: https://img.shields.io/codecov/c/github/smartcar/unit/master.svg?style=flat-square
 
 [gk-url]: https://greenkeeper.io
-[gk-image]: https://badges.greenkeeper.io/smartcar/unit.svg
+[gk-image]: https://badges.greenkeeper.io/smartcar/unit.svg?style=flat-square
