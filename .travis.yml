@@ -2,19 +2,16 @@ language:
   - node_js
 
 node_js:
-  - 6
-  - 8
-  - 10
-
-branches:
-  except:
-    - /^v\d+\.\d+\.\d+$/
+  - "10"
+  - "8"
+  - "6"
 
 cache:
   directories:
-    - $HOME/.npm
-    - node_modules
-    - .eslintcache
+    - "$HOME/.npm"
+    - ".eslintcache"
+
+if: tag IS blank # do not build tags
 
 before_install:
   - dpkg --compare-versions `npm -v` ge 6.0 || npm i -g npm@latest
@@ -30,7 +27,7 @@ script:
   - npm run cover
 
 after_success:
-  - test $TRAVIS_NODE_VERSION = 8 && bash <(curl -s https://codecov.io/bash)
+  - bash <(curl -s https://codecov.io/bash)
 
 after_script:
  - greenkeeper-lockfile-upload
