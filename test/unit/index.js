@@ -1,7 +1,7 @@
 'use strict';
 
 const test = require('ava');
-const unit = require('../index');
+const unit = require('../../index');
 
 function approximately(value, expected) {
   return Math.abs(value - expected) <= 0.0001;
