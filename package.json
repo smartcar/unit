@@ -4,7 +4,11 @@
   "description": "unit conversion library",
   "main": "index.js",
   "license": "MIT",
-  "author": "Smartcar <hello@smartcar.com> (https://smartcar.com)",
+  "author": {
+    "name": "Smartcar",
+    "email": "hello@smartcar.com",
+    "url": "https://smartcar.com"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/smartcar/unit.git"
@@ -24,7 +28,7 @@
     "units.js"
   ],
   "engines": {
-    "node": ">=4.0.0"
+    "node": ">=6.0.0"
   },
   "scripts": {
     "test": "ava",
