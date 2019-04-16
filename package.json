@@ -42,7 +42,7 @@
     "eslint": "^5.11.1",
     "eslint-config-smartcar": "^3.0.0",
     "greenkeeper-lockfile": "^1.15.1",
-    "nyc": "^13.1.0",
+    "nyc": "^14.0.0",
     "semantic-release": "^15.13.2"
   }
 }
