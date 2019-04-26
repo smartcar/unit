@@ -135,3 +135,13 @@ test('uppercase', function(t) {
   const l = unit(0.219969, 'GaLLons').as('l');
   t.is(l, 1);
 });
+
+test('kmpl', function(t) {
+  const kmpl = unit(2.35215, 'mpg').as('kmpl');
+  t.is(kmpl, 1);
+});
+
+test('mpg', function(t) {
+  const mpg = unit(0.425144, 'kmpl').as('mpg');
+  t.true(approximately(mpg, 1));
+});
