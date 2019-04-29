@@ -100,4 +100,12 @@ module.exports = {
     base: 0.219969,
     aliases: ['gallon', 'gallons'],
   },
+  kmpl: {
+    base: 1,
+    aliases: ['km/l'],
+  },
+  mpg: {
+    base: 2.35215,
+    aliases: [],
+  },
 };

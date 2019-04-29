@@ -55,6 +55,11 @@ const kilometersRounded = miles.as('kilometers', 2); // 296119.3
 | us gallon | `usgal` `usgallon` `usgallons` |
 | imperial gallon | `gal` `gallon` `gallons` |
 
+| Fuel Economy | aliases |
+| ------ | ------- |
+| kilometers per liter  | `kmpl` `km/l`|
+| us miles per gallon | `mpg` |
+
 [npm-url]: https://www.npmjs.com/package/smartcar-unit
 [npm-image]: https://img.shields.io/npm/v/smartcar-unit.svg?style=flat-square
 
