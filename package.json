@@ -34,15 +34,14 @@
     "test": "ava",
     "posttest": "npm run lint -s",
     "lint": "eslint . --cache",
-    "cover": "nyc npm test -s",
-    "release": "semantic-release"
+    "cover": "nyc npm test -s"
   },
   "devDependencies": {
-    "ava": "^1.4.1",
-    "eslint": "^5.16.0",
+    "ava": "^2.2.0",
+    "eslint": "^6.1.0",
     "eslint-config-smartcar": "^3.0.0",
     "greenkeeper-lockfile": "^1.15.1",
     "nyc": "^14.1.1",
-    "semantic-release": "^15.13.12"
+    "semantic-release": "^15.13.18"
   }
 }
