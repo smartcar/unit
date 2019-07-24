@@ -2,9 +2,9 @@ language:
   - node_js
 
 node_js:
+  - "12"
   - "10"
   - "8"
-  - "6"
 
 cache:
   directories:
@@ -16,9 +16,6 @@ if: tag IS blank # do not build tags
 notifications:
   slack:
     secure: "bQ4jfAO+I5eehbKJ+/bgVwaWXdqvm3nJm6yXybCVYUsZSd+sucx5brI0FRE20KoDQAjsczvEGfRhK9HpqWzlZ9vsMornZ84dhmM/UVauJ5z3lVANS2nyPIJxuGIDGNo6gLq5A03QEL+Ws8IHK4vlRKdB29o6epQeskFdhL0AWZsag3NdS2sMpU/E/R9Y96Fccbl5MEO/0Tl5cmVHAiw+USRiOHNoLGsXsN6+qWncTBOgGxGeIm3tU6oSLofWPukArm3uU1FFG34qluaot552bySKm+IxgH3wSLliwIS0zG8hDmCxH+2uzFLAhb58lFyZ4GPmOp5PDswzXIV/eKcpv0uL3v9EjjBegh/8oCP6tLdj0bVFUHOc+7ol1QgaaxpT3ryUUDg89SIBavK14+CdgzIKQ+HcgP+CSHrO0+woM47Lcy2LlrV11c7gmjdPRatUw1yeBCKoH/AKdcqs2hE6A7xpcIdtYkzJf5hyofjoVToejpXCEO5UWL9gBvPEJJZakX1XvT10WrCxlsIMBKJCYmIubuSwOiW2XnKSHN0ZyXIQU4LJ0UFHjcST4MJ4X3IR3sPkXNBgDBx96vlX5Jk2izOTUHey4qBmMHCPug/5W+coOtgJfzNZbD6661MT9qbSIPHmWEh5ETM17Q5IpDvbDI0YhxSvmMdNOZOekHfVkhM="
-
-before_install:
-  - dpkg --compare-versions `npm -v` ge 6.0 || npm i -g npm@latest
 
 install:
   - if [[ "$TRAVIS_BRANCH" = "greenkeeper/"* ]]; then npm install; else npm ci; fi
@@ -39,5 +36,5 @@ after_script:
 jobs:
   include:
     - stage: publish
-      node_js: 8
+      node_js: 10
       script: npm run release
