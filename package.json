@@ -42,6 +42,6 @@
     "eslint-config-smartcar": "^3.0.0",
     "greenkeeper-lockfile": "^1.15.1",
     "nyc": "^15.0.0",
-    "semantic-release": "^15.13.18"
+    "semantic-release": "^16.0.0"
   }
 }
