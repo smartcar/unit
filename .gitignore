@@ -4,49 +4,34 @@
 .DS_Store
 Thumbs.db
 ehthumbs.db
-Desktop.ini
+[Dd]esktop.ini
 
-# Packages
+# Node.js
 node_modules
-bower_components
-
-# Testing/Coverage/Lint
-out
-doc
-dist
 coverage
-.dockerignore
+jsdoc
 .eslintcache
-.tern-project
 .nyc_output
 
 # Editors
 
 ## Vscode
-.vscode
-.settings
-tsconfig.json
-jsconfig.json
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
 
 ## Vim
 *~
-tags
 .netrwhist
 Session.vim
-[._]s[a-w][a-z]
-[._]*.]s[a-w][a-z]]
-
-## Sublime
-*.tmlanguage.cache
-*.tmPreferences.cache
-*.stTheme.cache
-*.sublime-workspace
-sftp-config.json
-Package Control.last-run
-Package Control.ca-list
-Package Control.ca-bundle
-Package Control.system-ca-bundle
-Package Control.cache/
-Package Control.ca-certs/
-bh_unicode_properties.cache
-GitHub.sublime-settings
+Sessionx.vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]*.un~
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+tags
