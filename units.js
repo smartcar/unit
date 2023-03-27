@@ -108,4 +108,36 @@ module.exports = {
     base: 2.35215,
     aliases: [],
   },
+  dd: {
+    from: function(dms) {
+      const [deg, min, sec] = Array.isArray(dms)
+        ? dms
+        : dms.split(',').map((val) => Number(val));
+      return deg + (min / 60) + (sec / 3600);
+    },
+    to: function(dd) { return dd; },
+    aliases: ['degree', 'degrees', 'decimaldegrees'],
+  },
+  dms: {
+    from: function(dd) {
+      const degrees = Math.trunc(dd);
+      let decimal = Math.abs(dd - degrees);
+      if (decimal === 0) { return `${degrees},0,00.00`; }
+
+      const decimalMinutes = decimal * 60;
+      const minutes = Math.trunc(decimalMinutes);
+      decimal = decimalMinutes - minutes;
+      if (decimal === 0) { return `${degrees},${minutes},00.00`; }
+
+      let decimalSeconds = decimal * 60;
+      decimalSeconds = Math.round(decimalSeconds * 10000) / 10000;
+      if (decimalSeconds < 10) {
+        decimalSeconds = '0' + String(decimalSeconds);
+      }
+
+      return `${degrees},${minutes},${decimalSeconds}`;
+    },
+    to: function(dms) { return dms; },
+    aliases: ['degminsec', 'degreesminutesseconds'],
+  },
 };
