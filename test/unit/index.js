@@ -169,7 +169,7 @@ test('dms - decimal is integer', function(t) {
   const [d, m, s] = dms.split(',');
   t.is(d, '90');
   t.is(m, '0');
-  t.is(s, '00.00');
+  t.is(s, '0');
 });
 
 test('dms - seconds value is 0', function(t) {
@@ -177,7 +177,7 @@ test('dms - seconds value is 0', function(t) {
   const [d, m, s] = dms.split(',');
   t.is(d, '90');
   t.is(m, '30');
-  t.is(s, '00.00');
+  t.is(s, '0');
 });
 
 

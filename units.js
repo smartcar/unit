@@ -122,18 +122,15 @@ module.exports = {
     from: function(dd) {
       const degrees = Math.trunc(dd);
       let decimal = Math.abs(dd - degrees);
-      if (decimal === 0) { return `${degrees},0,00.00`; }
+      if (decimal === 0) { return `${degrees},0,0`; }
 
       const decimalMinutes = decimal * 60;
       const minutes = Math.trunc(decimalMinutes);
       decimal = decimalMinutes - minutes;
-      if (decimal === 0) { return `${degrees},${minutes},00.00`; }
+      if (decimal === 0) { return `${degrees},${minutes},0`; }
 
       let decimalSeconds = decimal * 60;
       decimalSeconds = Math.round(decimalSeconds * 10000) / 10000;
-      if (decimalSeconds < 10) {
-        decimalSeconds = '0' + String(decimalSeconds);
-      }
 
       return `${degrees},${minutes},${decimalSeconds}`;
     },
