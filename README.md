@@ -17,48 +17,53 @@ const kilometersRounded = miles.as('kilometers', 2); // 296119.3
 
 # Supported Units
 
-| Distance | aliases |
-|----------|---------|
-| inch | `in` `inch` `inches`|
-| foot | `ft` `foot` `feet` |
-| mile | `mi` `mile` `miles` |
-| meter | `m` `meter` `meters` `metre` `metres` |
-| kilometer | `km` `kilometer` `kilometers` |
+| Distance  | aliases                               |
+| --------- | ------------------------------------- |
+| inch      | `in` `inch` `inches`                  |
+| foot      | `ft` `foot` `feet`                    |
+| mile      | `mi` `mile` `miles`                   |
+| meter     | `m` `meter` `meters` `metre` `metres` |
+| kilometer | `km` `kilometer` `kilometers`         |
 
-| Pressure | aliases |
-|----------|---------|
-| pounds per square inch| `psi` `psis` |
-| pascal | `pa` `pascal` `pascals` |
-| bar | `bar` `bars` |
-| millibar | `mbar` `millibar` `mbars` `millibars` `hectopascal` `hectopascals` |
-| millimeter of mercury | `mmhg` `torr` |
-| atmospheric | `atmosphere` `atmospheres` `atmospheric` `barometric` |
-| kilopascal | `kpa` `kpas` `kilopascal` `kilopascals` |
+| Pressure               | aliases                                                            |
+| ---------------------- | ------------------------------------------------------------------ |
+| pounds per square inch | `psi` `psis`                                                       |
+| pascal                 | `pa` `pascal` `pascals`                                            |
+| bar                    | `bar` `bars`                                                       |
+| millibar               | `mbar` `millibar` `mbars` `millibars` `hectopascal` `hectopascals` |
+| millimeter of mercury  | `mmhg` `torr`                                                      |
+| atmospheric            | `atmosphere` `atmospheres` `atmospheric` `barometric`              |
+| kilopascal             | `kpa` `kpas` `kilopascal` `kilopascals`                            |
 
-| Temperature | aliases |
-| ----------- | ------- |
-| kelvin | `k` `kelvin` `kelvins` |
-| fahrenheit | `f` `fahrenheit` |
-| celsius | `c` `celsius` `centigrade` |
+| Temperature | aliases                    |
+| ----------- | -------------------------- |
+| kelvin      | `k` `kelvin` `kelvins`     |
+| fahrenheit  | `f` `fahrenheit`           |
+| celsius     | `c` `celsius` `centigrade` |
 
-| Mass | aliases |
-| ---- | ------- |
-| ounce | `oz` `ounce` `ounces` |
-| pound | `lb` `lbs` `pound` `pounds` |
-| gram | `g` `gm` `gram` `grams` |
+| Mass     | aliases                     |
+| -------- | --------------------------- |
+| ounce    | `oz` `ounce` `ounces`       |
+| pound    | `lb` `lbs` `pound` `pounds` |
+| gram     | `g` `gm` `gram` `grams`     |
 | kilogram | `kg` `kilogram` `kilograms` |
 
-| Volume | aliases |
-| ------ | ------- |
-| milliliter  | `ml` `milliliter` `milliliters` `millilitre` `millilitres`|
-| liter  | `l` `liter` `liters` `litre` `litres`|
-| us gallon | `usgal` `usgallon` `usgallons` |
-| imperial gallon | `gal` `gallon` `gallons` |
+| Volume          | aliases                                                    |
+| --------------- | ---------------------------------------------------------- |
+| milliliter      | `ml` `milliliter` `milliliters` `millilitre` `millilitres` |
+| liter           | `l` `liter` `liters` `litre` `litres`                      |
+| us gallon       | `usgal` `usgallon` `usgallons`                             |
+| imperial gallon | `gal` `gallon` `gallons`                                   |
 
-| Fuel Economy | aliases |
-| ------ | ------- |
-| kilometers per liter  | `kmpl` `km/l`|
-| us miles per gallon | `mpg` |
+| Fuel Economy         | aliases       |
+| -------------------- | ------------- |
+| kilometers per liter | `kmpl` `km/l` |
+| us miles per gallon  | `mpg`         |
+
+| Latitude/Longitude     | aliases                                    |
+| ---------------------- | ------------------------------------------ |
+| decimal degrees        | `dd` `degree` `degrees`                    |
+| degree/minutes/seconds | `dms` `degminsec`, `degreesminutesseconds` |
 
 [npm-url]: https://www.npmjs.com/package/smartcar-unit
 [npm-image]: https://img.shields.io/npm/v/smartcar-unit.svg?style=flat-square

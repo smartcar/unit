@@ -145,3 +145,46 @@ test('mpg', function(t) {
   const mpg = unit(0.425144, 'kmpl').as('mpg');
   t.true(approximately(mpg, 1));
 });
+
+test('decimal degrees - dms is csv', function(t) {
+  const dd = unit('90,30,30', 'dms').as('dd');
+  t.true(approximately(dd, 90.50833));
+});
+
+test('decimal degrees - dms is array', function(t) {
+  const dd = unit([90, 30, 30], 'dms').as('dd');
+  t.true(approximately(dd, 90.50833));
+});
+
+test('dms', function(t) {
+  const dms = unit(90.50833333333333, 'dd').as('dms');
+  const [d, m, s] = dms.split(',');
+  t.is(d, '90');
+  t.is(m, '30');
+  t.is(s, '30');
+});
+
+test('dms - decimal is integer', function(t) {
+  const dms = unit(90, 'dd').as('dms');
+  const [d, m, s] = dms.split(',');
+  t.is(d, '90');
+  t.is(m, '0');
+  t.is(s, '0');
+});
+
+test('dms - seconds value is 0', function(t) {
+  const dms = unit(90.5, 'dd').as('dms');
+  const [d, m, s] = dms.split(',');
+  t.is(d, '90');
+  t.is(m, '30');
+  t.is(s, '0');
+});
+
+
+test('dms - degree is negative', function(t) {
+  const dms = unit(-90.50833333333333, 'dd').as('dms');
+  const [d, m, s] = dms.split(',');
+  t.is(d, '-90');
+  t.is(m, '30');
+  t.is(s, '30');
+});
