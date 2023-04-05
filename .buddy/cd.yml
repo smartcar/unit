@@ -5,7 +5,7 @@
         - ":default"
   fail_on_prepare_env_warning: true
   actions:
-    - action: "Execute npm test"
+    - action: "semantic release"
       type: "BUILD"
       docker_image_name: "library/node"
       docker_image_tag: "14.21.2"
