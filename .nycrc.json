@@ -3,11 +3,12 @@
   "branches": 98,
   "functions": 98,
   "statements": 98,
-  "all" : false,
+  "all": false,
   "cache": true,
   "reporter": [
     "lcov",
     "text"
   ],
-  "check-coverage": true
+  "check-coverage": true,
+  "report-dir": ".nyc_output"
 }

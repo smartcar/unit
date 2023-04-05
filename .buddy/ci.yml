@@ -1,0 +1,41 @@
+- pipeline: "CI"
+  events:
+    - type: "PUSH"
+      refs:
+        - "refs/heads/*"
+  fail_on_prepare_env_warning: true
+  actions:
+    - action: "build dev dependencies"
+      type: "BUILD"
+      region: "us-west-2"
+      docker_image_name: "smartcar/base"
+      docker_image_tag: "14"
+      execute_commands:
+        - "npm ci --ignore-scripts"
+        - "npm rebuild"
+      volume_mappings:
+        - "/:/buddy/unit"
+      cache_base_image: true
+      shell: "BASH"
+      integration_hash: "3DmJqAMrlNbWp9nJdyg5Kx2n6z"
+    - action: "Execute npm test"
+      type: "BUILD"
+      region: "us-west-2"
+      docker_image_name: "smartcar/base"
+      docker_image_tag: "14"
+      execute_commands:
+        - "npm test"
+        - "npm run cover"
+        - "curl -Os https://uploader.codecov.io/latest/linux/codecov"
+        - "chmod +x codecov"
+        - "./codecov -t ${CODECOV_TOKEN} -R .nyc_output"
+      volume_mappings:
+        - "/:/buddy/unit"
+      cache_base_image: true
+      shell: "BASH"
+      variables:
+        - key: "CODECOV_TOKEN"
+          value: "secure!kJ2sD8zUkqXyAkCbzeh33/cWGKLOT4ZQGVybueDarOxUyvers+RPg8lg+NweIPKi.nIkMt7XOTzp/yjoo31mdOA=="
+          type: "VAR"
+          encrypted: true
+      integration_hash: "3DmJqAMrlNbWp9nJdyg5Kx2n6z"
