@@ -4,6 +4,15 @@
       refs:
         - ":default"
   fail_on_prepare_env_warning: true
+  variables:
+    - key: "GH_TOKEN"
+      value: "secure!h80n3qv7nc84PPSnVwiSbGu0v1yXE8Q+2yHuhGY2dRc=.Sg601n2kjxtWEHCx/tm9Ug=="
+      type: "VAR"
+      encrypted: true
+    - key: "NPM_TOKEN"
+      value: "secure!JSjVxtqJWZ5+mNfIIT3aPiqpo0/xTyOoeSI6MFyViZY=.xQwDwzONGDKV1UY65gvuPw=="
+      type: "VAR"
+      encrypted: true
   actions:
     - action: "semantic release"
       type: "BUILD"
