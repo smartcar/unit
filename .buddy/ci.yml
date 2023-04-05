@@ -8,8 +8,8 @@
     - action: "build dev dependencies"
       type: "BUILD"
       region: "us-west-2"
-      docker_image_name: "smartcar/base"
-      docker_image_tag: "14"
+      docker_image_name: "library/node"
+      docker_image_tag: "14.21.2"
       execute_commands:
         - "npm ci --ignore-scripts"
         - "npm rebuild"
@@ -17,12 +17,11 @@
         - "/:/buddy/unit"
       cache_base_image: true
       shell: "BASH"
-      integration_hash: "3DmJqAMrlNbWp9nJdyg5Kx2n6z"
     - action: "Execute npm test"
       type: "BUILD"
       region: "us-west-2"
-      docker_image_name: "smartcar/base"
-      docker_image_tag: "14"
+      docker_image_name: "library/node"
+      docker_image_tag: "14.21.2"
       execute_commands:
         - "npm test"
         - "npm run cover"
@@ -38,4 +37,3 @@
           value: "secure!kJ2sD8zUkqXyAkCbzeh33/cWGKLOT4ZQGVybueDarOxUyvers+RPg8lg+NweIPKi.nIkMt7XOTzp/yjoo31mdOA=="
           type: "VAR"
           encrypted: true
-      integration_hash: "3DmJqAMrlNbWp9nJdyg5Kx2n6z"
