@@ -1,0 +1,18 @@
+- pipeline: "CD"
+  events:
+    - type: "PUSH"
+      refs:
+        - ":default"
+  fail_on_prepare_env_warning: true
+  actions:
+    - action: "Execute npm test"
+      type: "BUILD"
+      docker_image_name: "library/node"
+      docker_image_tag: "14.21.2"
+      execute_commands:
+        - "npm ci"
+        - "npx semantic-release"
+      volume_mappings:
+        - "/:/buddy/unit"
+      cache_base_image: true
+      shell: "BASH"
