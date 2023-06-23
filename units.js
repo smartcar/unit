@@ -2,7 +2,7 @@
 
 module.exports = {
   in: {
-    base: 1000 / 0.3048 * 12,
+    base: (1000 / 0.3048) * 12,
     aliases: ['inch', 'inches'],
   },
   ft: {
@@ -12,6 +12,10 @@ module.exports = {
   mi: {
     base: 1 / 1.609344,
     aliases: ['mile', 'miles'],
+  },
+  mm: {
+    base: 1000000,
+    aliases: ['millimeter', 'millimeters'],
   },
   cm: {
     base: 100000,
@@ -54,18 +58,30 @@ module.exports = {
     aliases: ['kpas', 'kilopascal', 'kilopascals'],
   },
   k: {
-    from: function(c) { return c + 273.15; },
-    to: function(k) { return k - 273.15; },
+    from: function(c) {
+      return c + 273.15;
+    },
+    to: function(k) {
+      return k - 273.15;
+    },
     aliases: ['kelvin', 'kelvins'],
   },
   f: {
-    from: function(c) { return (c * 9 / 5) + 32; },
-    to: function(f) { return (f - 32) * 5 / 9; },
+    from: function(c) {
+      return (c * 9) / 5 + 32;
+    },
+    to: function(f) {
+      return ((f - 32) * 5) / 9;
+    },
     aliases: ['fahrenheit'],
   },
   c: {
-    from: function(c) { return c; },
-    to: function(c) { return c; },
+    from: function(c) {
+      return c;
+    },
+    to: function(c) {
+      return c;
+    },
     aliases: ['celsius', 'centigrade'],
   },
   oz: {
@@ -113,28 +129,36 @@ module.exports = {
       const [deg, min, sec] = Array.isArray(dms)
         ? dms
         : dms.split(',').map((val) => Number(val));
-      return deg + (min / 60) + (sec / 3600);
+      return deg + min / 60 + sec / 3600;
     },
-    to: function(dd) { return dd; },
+    to: function(dd) {
+      return dd;
+    },
     aliases: ['degree', 'degrees', 'decimaldegrees'],
   },
   dms: {
     from: function(dd) {
       const degrees = Math.trunc(dd);
       let decimal = Math.abs(dd - degrees);
-      if (decimal === 0) { return `${degrees},0,0`; }
+      if (decimal === 0) {
+        return `${degrees},0,0`;
+      }
 
       const decimalMinutes = decimal * 60;
       const minutes = Math.trunc(decimalMinutes);
       decimal = decimalMinutes - minutes;
-      if (decimal === 0) { return `${degrees},${minutes},0`; }
+      if (decimal === 0) {
+        return `${degrees},${minutes},0`;
+      }
 
       let decimalSeconds = decimal * 60;
       decimalSeconds = Math.round(decimalSeconds * 10000) / 10000;
 
       return `${degrees},${minutes},${decimalSeconds}`;
     },
-    to: function(dms) { return dms; },
+    to: function(dms) {
+      return dms;
+    },
     aliases: ['degminsec', 'degreesminutesseconds'],
   },
 };
