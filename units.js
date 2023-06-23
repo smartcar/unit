@@ -68,7 +68,7 @@ module.exports = {
   },
   f: {
     from: function(c) {
-      return (c * 9) / 5 + 32;
+      return ((c * 9) / 5) + 32;
     },
     to: function(f) {
       return ((f - 32) * 5) / 9;
@@ -129,6 +129,7 @@ module.exports = {
       const [deg, min, sec] = Array.isArray(dms)
         ? dms
         : dms.split(',').map((val) => Number(val));
+      // eslint-disable-next-line no-mixed-operators
       return deg + min / 60 + sec / 3600;
     },
     to: function(dd) {
