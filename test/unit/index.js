@@ -40,6 +40,10 @@ test('meters', function(t) {
   const km = unit(1000, 'meters').as('km');
   t.is(km, 1);
 });
+test('millimeters', function(t) {
+  const mm = unit(19, 'in').as('mm');
+  t.is(mm, 482.6);
+});
 
 test('kilometers', function(t) {
   const km = unit(1, 'kilometer').as('kilometer');
@@ -179,7 +183,6 @@ test('dms - seconds value is 0', function(t) {
   t.is(m, '30');
   t.is(s, '0');
 });
-
 
 test('dms - degree is negative', function(t) {
   const dms = unit(-90.50833333333333, 'dd').as('dms');
